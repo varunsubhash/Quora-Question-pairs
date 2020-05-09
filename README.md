@@ -101,3 +101,17 @@ Data columns (total 6 columns):<br>
 - Plotting the bar graph for duplicate and non duplicate question we get the below graph.
 
 ![](Capture1.PNG)
+
+- Total number of question pairs for training:  404290<br>
+- Question pairs are not Similar (is_duplicate = 0):63.08%<br>
+- Question pairs are Similar (is_duplicate = 1): 36.92%<br>
+
+<h3> 3.2.2 Number of unique questions </h3>
+
+- We find the below information regarding questions.<br>
+
+  - Total number of  Unique Questions are: 537933<br>
+
+  - Number of unique questions that appear more than one time: 111780 (20.77953945937505%)<br>
+
+  - Max number of times a single question is repeated: 157<br>
