@@ -116,4 +116,4 @@ Data columns (total 6 columns):<br>
 
   - Max number of times a single question is repeated: 157<br>
 
-![](capture 2.PNG)
+![](Capture2.PNG)
