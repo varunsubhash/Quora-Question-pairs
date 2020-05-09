@@ -11,7 +11,9 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 <br>
 > Credits: Kaggle 
 
-  Problem Statement<br>
+  # Problem Statement<br>
 - Identify which questions asked on Quora are duplicates of questions that have already been asked. <br>
 - This could be useful to instantly provide answers to questions that have already been answered. <br>
 - We are tasked with predicting whether a pair of questions are duplicates or not. <br>
+
+<h2> 1.2 Source</h2>
