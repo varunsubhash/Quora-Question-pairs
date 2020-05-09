@@ -117,3 +117,8 @@ Data columns (total 6 columns):<br>
   - Max number of times a single question is repeated: 157<br>
 
 ![](Capture2.PNG)
+
+- We check if any duplicates are present.<br>
+- A log histograms of question appearance count  are as shown below.<br>
+
+![](Capture3.PNG)
