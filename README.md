@@ -79,12 +79,12 @@ Metric(s):
  <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 404290 entries, 0 to 404289 <br>
 Data columns (total 6 columns):<br>
- #   Column        Non-Null Count   Dtype <br>
----  ------        --------------   ----- 
-- 0   id            404290 non-null  int64 <br>
-- 1   qid1          404290 non-null  int64 <br>
-- 2   qid2          404290 non-null  int64 <br>
-- 3   question1     404289 non-null  object<br>
-- 4   question2     404288 non-null  object<br>
-- 5   is_duplicate  404290 non-null  int64 <br>
+ #   Column         Non-Null Count    Dtype <br>
+---  ------         --------------    ----- 
+- 0   id             404290 non-null  int64 <br>
+- 1   qid1           404290 non-null  int64 <br>
+- 2   qid2           404290 non-null  int64 <br>
+- 3   question1      404289 non-null  object<br>
+- 4   question2      404288 non-null  object<br>
+- 5   is_duplicate   404290 non-null  int64 <br>
 -dtypes: int64(4), object(2)<br>
