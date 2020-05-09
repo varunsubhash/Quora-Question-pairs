@@ -121,4 +121,23 @@ Data columns (total 6 columns):<br>
 - We check if any duplicates are present.<br>
 - A log histograms of question appearance count  are as shown below.<br>
 
+
 ![](Capture3.PNG)
+
+- We will replace Nan values using ' '.<br>
+
+- <h2>3.3 Basic Feature Extraction (before cleaning) </h2>
+
+
+Let us now construct a few features like:<br>
+ - ____freq_qid1____ = Frequency of qid1's
+ - ____freq_qid2____ = Frequency of qid2's 
+ - ____q1len____ = Length of q1
+ - ____q2len____ = Length of q2
+ - ____q1_n_words____ = Number of words in Question 1
+ - ____q2_n_words____ = Number of words in Question 2
+ - ____word_Common____ = (Number of common unique words in Question 1 and Question 2)
+ - ____word_Total____ =(Total num of words in Question 1 + Total num of words in Question 2)
+ - ____word_share____ = (word_common)/(word_Total)
+ - ____freq_q1+freq_q2____ = sum total of frequency of qid1 and qid2 
+ - ____freq_q1-freq_q2____ = absolute difference of frequency of qid1 and qid2 
