@@ -150,3 +150,16 @@ Let us now construct a few features like:<br>
  - Minimum length of the questions in question2 :  1<br>
  - Number of Questions with minimum length [question1] : 67<br>
  - Number of Questions with minimum length [question2] : 24<br>
+ 
+ - Plotting violin plot of is duplicate vs wordshare and distribution plots of the same we get the below results.
+ 
+ ![](Capture4.PNG)
+ 
+ - The distributions for normalized word_share have some overlap on the far right-hand side, i.e., there are quite a lot of questions with high word similarity<br>
+- The average word share and Common no. of words of qid1 and qid2 is more when they are duplicate(Similar)<br>
+
+- Now doing the same with word common.We get the below plots.
+
+![](Capture5.PNG)
+
+- The distributions of the word_Common feature in similar and non-similar questions are highly overlapping.
