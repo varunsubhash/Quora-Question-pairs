@@ -115,3 +115,5 @@ Data columns (total 6 columns):<br>
   - Number of unique questions that appear more than one time: 111780 (20.77953945937505%)<br>
 
   - Max number of times a single question is repeated: 157<br>
+
+![](Capture 2.PNG)
