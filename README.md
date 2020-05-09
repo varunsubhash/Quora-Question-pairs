@@ -141,3 +141,12 @@ Let us now construct a few features like:<br>
  - ____word_share____ = (word_common)/(word_Total)
  - ____freq_q1+freq_q2____ = sum total of frequency of qid1 and qid2 
  - ____freq_q1-freq_q2____ = absolute difference of frequency of qid1 and qid2 
+ 
+ <h3> 3.3.1 Analysis of some of the extracted features </h3>
+ 
+ - Here are some questions have only one single words.
+ 
+ - Minimum length of the questions in question1 :  1<br>
+ - Minimum length of the questions in question2 :  1<br>
+ - Number of Questions with minimum length [question1] : 67<br>
+ - Number of Questions with minimum length [question2] : 24<br>
