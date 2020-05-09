@@ -88,3 +88,16 @@ Data columns (total 6 columns):<br>
 - 4   question2      404288 non-null  object<br>
 - 5   is_duplicate   404290 non-null  int64 <br>
 -dtypes: int64(4), object(2)<br>
+
+- We are given a minimal number of data fields here, consisting of:<br>
+
+  - id:  Looks like a simple rowID<br>
+  - qid{1, 2}:  The unique ID of each question in the pair<br>
+  - question{1, 2}:  The actual textual contents of the questions.<br>
+  - is_duplicate:  The label that we are trying to predict - whether the two questions are duplicates of each other.<br>
+  
+ <h3> 3.2.1 Distribution of data points among output classes</h3>
+- Number of duplicate(smilar) and non-duplicate(non similar) questions<br>
+- Plotting the bar graph for duplicate and non duplicate question we get the below graph.
+
+![](Capture1.PNG)
