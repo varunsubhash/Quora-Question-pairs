@@ -163,3 +163,65 @@ Let us now construct a few features like:<br>
 ![](Capture5.PNG)
 
 - The distributions of the word_Common feature in similar and non-similar questions are highly overlapping.
+
+<h2> 3.4 Preprocessing of Text </h2>
+
+- Preprocessing:<br>
+
+- Here we pre process the below data.
+    - Removing html tags <br>
+    - Removing Punctuations<br>
+    - Performing stemming<br>
+    - Removing Stopwords<br>
+    - Expanding contractions etc.<br>
+    
+ <h2> 3.5 Advanced Feature Extraction (NLP and Fuzzy Features) </h2>
+    
+- Function to Compute and get the features : With 2 parameters of Question 1 and Question 2<br>
+
+Definition:
+- __Token__: You get a token by splitting sentence a space
+- __Stop_Word__ : stop words as per NLTK.
+- __Word__ : A token that is not a stop_word
+
+
+Features:
+- __cwc_min__ :  Ratio of common_word_count to min lenghth of word count of Q1 and Q2 <br>cwc_min = common_word_count / (min(len(q1_words), len(q2_words))
+<br>
+<br>
+- __cwc_max__ :  Ratio of common_word_count to max lenghth of word count of Q1 and Q2 <br>cwc_max = common_word_count / (max(len(q1_words), len(q2_words))
+<br>
+<br>
+- __csc_min__ :  Ratio of common_stop_count to min lenghth of stop count of Q1 and Q2 <br> csc_min = common_stop_count / (min(len(q1_stops), len(q2_stops))
+<br>
+<br>
+- __csc_max__ :  Ratio of common_stop_count to max lenghth of stop count of Q1 and Q2<br>csc_max = common_stop_count / (max(len(q1_stops), len(q2_stops))
+<br>
+<br>
+- __ctc_min__ :  Ratio of common_token_count to min lenghth of token count of Q1 and Q2<br>ctc_min = common_token_count / (min(len(q1_tokens), len(q2_tokens))
+<br>
+<br>
+
+- __ctc_max__ :  Ratio of common_token_count to max lenghth of token count of Q1 and Q2<br>ctc_max = common_token_count / (max(len(q1_tokens), len(q2_tokens))
+<br>
+<br>
+        
+- __last_word_eq__ :  Check if First word of both questions is equal or not<br>last_word_eq = int(q1_tokens[-1] == q2_tokens[-1])
+<br>
+<br>
+
+- __first_word_eq__ :  Check if First word of both questions is equal or not<br>first_word_eq = int(q1_tokens[0] == q2_tokens[0])
+<br>
+<br>
+        
+- __abs_len_diff__ :  Abs. length difference<br>abs_len_diff = abs(len(q1_tokens) - len(q2_tokens))
+<br>
+<br>
+
+- __mean_len__ :  Average Token Length of both Questions<br>mean_len = (len(q1_tokens) + len(q2_tokens))/2
+<br>
+<br>
+
+- __longest_substr_ratio__ :  Ratio of length longest common substring to min lenghth of token count of Q1 and Q2<br>longest_substr_ratio = len(longest common substring) / (min(len(q1_tokens), len(q2_tokens))
+
+
