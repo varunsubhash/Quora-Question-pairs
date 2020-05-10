@@ -312,6 +312,9 @@ Features:<br>
   
   - The test log loss is: 0.357054433715.
   - Plot of confusion, precision and recall matrix are as shown below respectively.
+  - We can see it is the best model.
+  
+  ![](Capture18.PNG)
   
 
 
