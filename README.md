@@ -207,4 +207,43 @@ Features:<br>
 
 - __longest_substr_ratio_ :  Ratio of length longest common substring to min lenghth of token count of Q1 and Q2<br>longest_substr_ratio = len(longest common substring) / (min(len(q1_tokens), len(q2_tokens))
 
+<h3>3.5.1 Analysis of extracted features </h3>
+
+<h4> 3.5.1.1 Plotting Word clouds</h4>
+
+- Creating Word Cloud of Duplicates and Non-Duplicates Question pairs<br>
+- We can observe the most frequent occuring words<br>
+
+- We read the text files and removing the stop words<br>
+
+- Word Clouds are generated from  duplicate pair question's text and we get the below.<br>
+
+![](Capture6.PNG)
+
+- Similarly word Clouds are generated from non duplicate pair question's text and we get the below.<br>
+
+![](Capture7.PNG)
+
+<h4> 3.5.1.2 Pair plot of features ['ctc_min', 'cwc_min', 'csc_min', 'token_sort_ratio'] </h4>
+
+- We get the below plots
+
+![](Capture8.PNG)
+
+- Plotting the viloin plot for token_sort_ratio vs is_duplicate and plotting the distribution plot for token_sort_ratio we get the below plots.
+
+- ![](Capture9.PNG)
+
+- Now repeating for fuzz_ratio we get the below
+
+- ![](Capture10.PNG)
+
+- After using tsne and reducing to 3 dimensions plotting sns plot we get the below.
+
+- ![](Capture11.PNG)
+
+-Plotting the 3d plot we get the below.
+
+- ![](Capture12.PNG)
+
 
