@@ -232,18 +232,87 @@ Features:<br>
 
 - Plotting the viloin plot for token_sort_ratio vs is_duplicate and plotting the distribution plot for token_sort_ratio we get the below plots.
 
-- ![](Capture9.PNG)
+ ![](Capture9.PNG)
 
 - Now repeating for fuzz_ratio we get the below
 
-- ![](Capture10.PNG)
+ ![](Capture10.PNG)
 
 - After using tsne and reducing to 3 dimensions plotting sns plot we get the below.
 
-- ![](Capture11.PNG)
+ ![](Capture11.PNG)
 
--Plotting the 3d plot we get the below.
+- Plotting the 3d plot we get the below.
 
-- ![](Capture12.PNG)
+ ![](Capture12.PNG)
+ 
+ <h2> 3.6 Featurizing text data with tfidf weighted word-vectors </h2>
+ 
+ - After we find TF-IDF scores, we convert each question to a weighted average of word2vec vectors by these scores.<br>
+- here we use a pre-trained GLOVE model which comes free with "Spacy".<br>
+- It is trained on Wikipedia and therefore, it is stronger in terms of word semantics. <br>
+
+-  Questions 1 and 2 tfidf weighted word2vec are computed.
+
+<h1>4. Machine Learning Models </h1>
+
+<h2> 4.1 Reading data from file and storing into sql table </h2>
+
+- Data is read and stored into sql table.
+
+<h2> 4.2 Converting strings to numerics </h2>
+
+-  After we read from sql table each entry was read it as a string ,we convert all the features into numaric before we apply any model.
+
+ <h2> 4.3 Random train test split( 70:30) </h2>
+ 
+ - The data is split in 70-30 ratio.
+ 
+ <h2> 4.4 Building a random model (Finding worst-case log-loss) </h2>
+ 
+ - This is the worst possible model.<br>
+ - We get the Log loss on Test Data using Random Model 0.887242646958 and the below confusion matrix, precision and recall matrix.
+ 
+ ![](Capture13.PNG)
+ 
+ <h2> 4.4 Logistic Regression with hyperparameter tuning </h2>
+ 
+ - For values of best alpha =  1 The train log loss is: 0.513842874233<br>
+ 
+ - For values of best alpha =  1 The test log loss is: 0.520035530431<br>
+ 
+ - Plot of alpha vs error measure and the confusion, precision and recall matrix are as shown below respectively.
+ 
+  ![](Capture14.PNG)
+  
+  ![](Capture15.PNG)
+  
+ <h2> 4.5 Linear SVM with hyperparameter tuning </h2>
+ 
+- For values of alpha =  1e-05 The log loss is: 0.657611721261<br>
+- For values of alpha =  0.0001 The log loss is: 0.489669093534<br>
+- For values of alpha =  0.001 The log loss is: 0.521829068562<br>
+- For values of alpha =  0.01 The log loss is: 0.566295616914<br>
+- For values of alpha =  0.1 The log loss is: 0.599957866217<br>
+- For values of alpha =  1 The log loss is: 0.635059427016<br>
+- For values of alpha =  10 The log loss is: 0.654159467907<br>
+
+- For values of best alpha =  0.0001 The train log loss is: 0.478054677285<br>
+- For values of best alpha =  0.0001 The test log loss is: 0.489669093534<br>
+
+- Plot of alpha vs error measure and the confusion, precision and recall matrix are as shown below respectively.
+
+
+  ![](Capture16.PNG)
+  
+  
+  ![](Capture17.PNG)
+  
+  <h2> 4.6 XGBoost </h2>
+  
+  - The test log loss is: 0.357054433715.
+  - Plot of confusion, precision and recall matrix are as shown below respectively.
+  
+
 
 
