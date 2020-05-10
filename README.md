@@ -185,7 +185,7 @@ Definition:
 - __Word__ : A token that is not a stop_word
 
 
-Features:
+Features:<br>
 -  __cwc_min__ :  Ratio of common_word_count to min lenghth of word count of Q1 and Q2 <br>cwc_min = common_word_count / (min(len(q1_words), len(q2_words))
 <br>
 <br>
